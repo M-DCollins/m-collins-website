@@ -1,0 +1,418 @@
+*:root {
+  --color-primary: #8c7284;
+  --color-secondary: #ffeaee;
+  --color-third: #b7c3f3;
+  --color-accent: #656839;
+  --color-headings: #27232b;
+  --color-body: #918ca4;
+  --color-border: #ccc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Darker Grotesque", serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  background-color: var(--color-secondary);
+  color: var(--color-body);
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Nixie One", cursive;
+  color: var(--color-headings);
+  font-weight: 900px;
+  text-shadow: var(--color-body) 2px 2px;
+}
+
+h3,
+h4 {
+  font-family: "Nixie One", cursive;
+  color: var(--color-headings);
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* HOME */
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  font-family: "Darker Grotesque", serif;
+}
+
+.head p {
+  font-size: 2rem;
+}
+
+#big_words {
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  margin-bottom: 10px;
+  color: var(--color-headings);
+}
+
+#logo {
+  font-family: "Lobster", cursive;
+  position: absolute;
+  font-size: 2rem;
+  padding: 20px;
+  top: -25px;
+  left: -20px;
+  display: none;
+}
+
+#avatar {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  border: solid 2px;
+  background-color: #27232b;
+}
+
+nav li {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  display: inline-block;
+  justify-items: baseline;
+  width: 8rem;
+  font-family: "Nixie One", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  color: var(--color-third);
+}
+
+li a:hover {
+  color: var(--color-acent);
+  transition-duration: 0.3s;
+}
+
+/* ABOUT */
+
+#about {
+  width: 80%;
+  height: auto;
+  padding-top: 60px;
+  margin: auto;
+  text-align: center;
+}
+
+#brain {
+  width: 15%;
+  float: left;
+  clear: both;
+  margin-right: 30px;
+  text-align: right;
+}
+
+#art {
+  width: 15%;
+  float: right;
+  clear: both;
+  margin-left: 30px;
+  text-align: left;
+}
+
+#plane {
+  width: 15%;
+  float: left;
+  clear: both;
+  margin-right: 30px;
+}
+#about_box_1 {
+  text-align: left;
+}
+#about_box_2 {
+  text-align: right;
+}
+#about_box_3 {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.images {
+  width: 100px;
+}
+
+.about_box {
+  padding-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+  #about {
+    height: auto;
+  }
+}
+/* SKILLS */
+
+#skills {
+  width: 90%;
+  height: auto;
+  padding-top: 60px;
+  margin: auto;
+  text-align: center;
+}
+
+.skills_container {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.skills_box {
+  padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+#stars {
+  color: var(--color-accent);
+}
+
+#skills,
+h4 {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  #skills {
+    height: auto;
+  }
+}
+
+/* PROJECTS */
+
+#projects {
+  width: 80%;
+  height: auto;
+  padding-top: 60px;
+  margin: auto;
+  text-align: center;
+}
+
+#projects_container {
+  padding-top: 30px;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects_box {
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.project_images {
+  width: 70%;
+  height: auto;
+  padding-top: 10px;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  #projects {
+    height: auto;
+  }
+}
+
+/* BUTTONS */
+.btn {
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2rem 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  transition-duration: 0.4s;
+}
+
+.btn_primary {
+  background: var(--color-primary);
+  color: white;
+  font-family: "Lobster", cursive;
+}
+.btn_secondary {
+  background-color: var(--color-headings);
+  color: var(--color-third);
+  font-family: "Darker Grotesque", serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.btn_primary:hover {
+  background: var(--color-accent);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5;
+  }
+}
+
+/* CONTACT*/
+#contact {
+  text-align: center;
+  width: 80%;
+  padding-top: 60px;
+  margin: auto;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  #contact {
+    height: 100vh;
+  }
+}
+form {
+  align-items: center;
+  text-align: center;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.contact_input {
+  color: var(--color-headings);
+  font-family: "Darker Grotesque", serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s;
+  padding: 13px;
+  margin: 15px 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid var(--color-border);
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Darker Grotesque", serif;
+  width: 100%;
+  background: var(--color-body);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: all 0.5s;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: var(--color-accent);
+}
+
+.copyright {
+  font-family: "Darker Grotesque", serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  margin-top: 10px;
+  border-color: var(--color-headings);
+}
+
+.contact_icon {
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  color: var(--color-headings);
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5;
+  }
+}
